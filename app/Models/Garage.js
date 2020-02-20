@@ -4,6 +4,15 @@
 const Model = use('Model')
 
 class Garage extends Model {
+
+    driver () {
+        return this.hasMany('App/Models/Driver')
+    }
+
+    cars () {
+        return this.manyThrough('App/Models/Driver','car')
+    }
+
 }
 
 module.exports = Garage
