@@ -5,7 +5,7 @@ const Model = use('Model')
 
 class Garage extends Model {
 
-    driver () {
+    drivers () {
         return this.hasMany('App/Models/Driver')
     }
 

@@ -19,3 +19,23 @@
 //     username: faker.username()
 //   }
 // })
+
+const Factory = use('Factory')
+
+Factory.blueprint('App/Models/Garage', (faker) => {
+    return {
+        name: faker.first()
+    }
+})
+
+Factory.blueprint('App/Models/Driver', (faker) => {
+    return {
+        name: faker.first()
+    }
+})
+
+Factory.blueprint('App/Models/Car', (faker) => {
+    return {
+        brand: faker.first()
+    }
+})
